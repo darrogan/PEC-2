@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Machine Learning App</title>
+    </head>
+    
+    <body>
+        <form name="form", method="POST", style="text-align: center;" action="/">
+            <br>
+            Class: <input type="number" name="pclass", placeholder="Enter pclass" required/>
+            <br><br>
+            Sex: <input type="text" name="sex", placeholder="Enter sex" required/>
+            <br><br>
+            Age: <input type="number" name="age", placeholder="Enter Age" required/>
+            <br><br>
+            Fare: <input type="number" name="fare", placeholder="Enter Fare" required/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+    </body>
+</html>

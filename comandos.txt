@@ -1,0 +1,15 @@
+cd .\Model\
+cd .\ServingAPI\
+docker build -t darrogan/pec2:2 . 
+cd .\compose\
+docker-compose up -d
+docker-compose down -v
+
+K8s
+*if in compose*
+cd ..
+*if in ServingAPI*
+kubectl apply -f client-node-port.yaml
+kubectl apply -f client-pod-ml.yaml
+kubectl apply -f cliente-client-ip.yaml
+kubectl apply -f ingress.yaml
